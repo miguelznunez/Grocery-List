@@ -12,7 +12,10 @@ addItem = () => {
   item.textContent = "- " + document.querySelector("#user_input").value;
 
   item.addEventListener("click", () => {
-    item.style.textDecoration = "line-through";
+    if(item.style.textDecoration != "line-through")
+      item.style.textDecoration = "line-through";
+    else
+      item.style.textDecoration = "none";
   })
 
   document.querySelector("#all_items").appendChild(item);
