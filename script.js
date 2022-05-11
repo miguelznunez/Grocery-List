@@ -1,15 +1,15 @@
 document.querySelector("#pencil").addEventListener("click", () => {
-  document.querySelector("#all_items").textContent = "";
+  document.querySelector("#groceryItems").textContent = "";
 })
 
-document.querySelector("#user_input").addEventListener("keydown", (event) => {
+document.querySelector("#userInput").addEventListener("keydown", (event) => {
   if(event.key == "Enter")
     addItem();
 });
 
 addItem = () => {
   const item = document.createElement("h2")
-  item.textContent = "- " + document.querySelector("#user_input").value;
+  item.textContent = "- " + document.querySelector("#userInput").value;
 
   item.addEventListener("click", () => {
     if(item.style.textDecoration != "line-through")
@@ -18,6 +18,6 @@ addItem = () => {
       item.style.textDecoration = "none";
   })
 
-  document.querySelector("#all_items").appendChild(item);
-  document.querySelector("#user_input").value = "";
+  document.querySelector("#groceryItems").appendChild(item);
+  document.querySelector("#userInput").value = "";
 }
