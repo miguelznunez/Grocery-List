@@ -58,11 +58,17 @@ body{
   flex-direction: column;
   gap: 15px;
   width: 75%;
+  font-size: 1.5rem;
 }
 
 #groceryItems h2{
-  font-size: 1.5rem;
   cursor: pointer;
+}
+
+@media(max-width:768px) {
+  #groceryItems {
+    font-size: 1.2rem;
+  }
 }
 
 @media(max-width:480px){
@@ -78,7 +84,7 @@ body{
     font-size: 1rem;
   }
 
-  #groceryItems h2{
+  #groceryItems{
     font-size: 0.9rem;
   }
 }
