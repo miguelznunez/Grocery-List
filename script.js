@@ -1,4 +1,4 @@
-document.querySelector("#pencil").addEventListener("click", () => {
+document.querySelector("#eraser").addEventListener("click", () => {
   document.querySelector("#groceryItems").textContent = "";
 })
 
