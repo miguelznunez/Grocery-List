@@ -14,7 +14,7 @@ body{
   display: flex;
 }
 
-#groceries{
+.notebook{
   width: 600px;
   min-height: 100vh;
   padding-top: 20px;
@@ -27,24 +27,24 @@ body{
   box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.50);  
 }
 
-#title{
+.title{
   font-size: 1.25rem;
   text-align: center;
 }
 
-#input{
+.input-container{
   width: 75%;
   display: flex;
   justify-content: center;
 }
 
-#input i{
+.input-container i{
   cursor: pointer;
   font-size: 2rem;
   color: orange;
 }
 
-#input input{
+.input-container input{
   font-family: inherit;
   outline: 0;
   border: 0;
@@ -53,25 +53,32 @@ body{
   border-bottom: 3px solid black;
 }
 
-#all_items{
-  font-size: 1.5rem;
+#groceryItems{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   width: 75%;
 }
 
+#groceryItems h2{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 @media(max-width:480px){
-  #title{
+  .title{
     font-size: 1rem;
   }
 
-  #input i{
+  .input-container i{
     font-size: 1.5rem;
   }
 
-  #input input{
+  .input-container input{
     font-size: 1rem;
   }
 
-  #all-items{
-    font-size: 1rem;
+  #groceryItems h2{
+    font-size: 0.9rem;
   }
 }
