@@ -1,10 +1,12 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body{
   font-family: "mumblers_demoregular";
+  color: #262626;
   background-color: orange;
 }
 
@@ -33,24 +35,25 @@ body{
 }
 
 .input-container{
-  width: 75%;
+  width: 100%;
   display: flex;
+  gap: 10px;
   justify-content: center;
 }
 
 .input-container i{
   cursor: pointer;
-  font-size: 2rem;
-  color: orange;
+  font-size: 2.5rem;
+  color: lightpink;
 }
 
 .input-container input{
   font-family: inherit;
   outline: 0;
   border: 0;
-  width: 100%;
+  width: 65%;
   font-size: 1.5rem;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid lightgray;
 }
 
 #groceryItems{
@@ -77,7 +80,7 @@ body{
   }
 
   .input-container i{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .input-container input{
